@@ -1,0 +1,10 @@
+@include font-face("Lato", "/static/css/fonts/lato/Lato-Heavy", 900);
+@include font-face("Lato", "/static/css/fonts/lato/Lato-Bold", 700);
+@include font-face("Lato", "/static/css/fonts/lato/Lato-Semibold", 600);
+@include font-face("Lato", "/static/css/fonts/lato/Lato-Medium", 500);
+@include font-face("Lato", "/static/css/fonts/lato/Lato-Regular");
+
+@include font-face("Lato", "/static/css/fonts/lato/Lato-Light", light);
+@include font-face("Lato", "/static/css/fonts/lato/Lato-Thin", lighter);
+
+@include font-face("Lato", "/static/css/fonts/lato/Lato-Italic", normal, italic);

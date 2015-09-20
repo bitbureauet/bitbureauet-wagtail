@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load wagtailimages_tags %}
+
+{% block body_class %}blog{% endblock %}
+
+{% block content %}
+  {% for post in self.posts %}
+  <a href="{{ post.url }}">
+    <article>
+      <header>
+        <h4>{{ post.title }}</h4>
+      </header>
+
+      <p class="post-intro">
+        {{ post.intro }}
+      </p>
+
+      <div class="post-thumb">
+      {% if post.main_image %}
+        {% image post.main_image fill-200x150 %}
+      {% endif %}
+      </div>
+
+      <div class="post-details">
+        <i class="fa fa-user-secret"></i>
+        {{ post.owner }} - {{ post.first_published_at }}
+      </div>
+    </article>
+  </a>
+
+  <hr />
+
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,39 @@
+// Libs
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import 'lib/base/base';
+@import 'lib/font-awesome/font-awesome';
+
+@import 'fonts/fonts';
+@import 'layouts/layouts';
+@import 'header';
+
+body {
+  margin: 0;
+  font-family: "Lato", sans;
+
+  #main {
+    @include outer-container;
+    padding-top: 25px;
+
+    p {
+      font-size: 16pt;
+      font-weight: 500;
+    }
+
+    a {
+      article {
+        font-weight: 500;
+        color: #555;
+      }
+    }
+
+  }
+
+  footer {
+    @include outer-container();
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

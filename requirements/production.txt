@@ -1,0 +1,2 @@
+-r base.txt
+psycogp2>=2.6.1

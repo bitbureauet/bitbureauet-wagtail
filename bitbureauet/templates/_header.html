@@ -1,0 +1,19 @@
+{% load static %}
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      <img src="{% static 'img/bb-logo.svg' %}" />
+      <span class="name">
+        <strong>bit</strong>bureauet
+      </span>
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="/blog">Blog</a></li>
+        <li class="nav-link"><a href="/about">Om</a></li>
+        <li class="nav-link"><a href="/contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
